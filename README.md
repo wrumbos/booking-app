@@ -1,27 +1,55 @@
-# BookingWeb
+# booking app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+app for show bookings
 
-## Development server
+## Tópicos
+*  **[📝 Requerimientos / tecnologias](#-requerimientos)**
+*  **[🚀 Solucion](#-Solucion)**
+*  **[🗂 Estructura de Directorios](#-estructura-de-directorios)**
+*  **[👓 Pruebas](#-pruebas)**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 📝 Requerimientos / Tecnologias
+```
+Nodejs 14.16.0
+Angular 11.2.4
+Ionic 5.4.16
+Cordova 10.0.0
+```
+## 🚀 Solucion
 
-## Code scaffolding
+Utilizando como base el proyecto booking-web en donde se utiliza Angular se integro con Ionic y Apache cordova para generar app hibridas partiendo del proyecto base
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🗂 Estructura de Directorios
+```
+📦 resume-api 
+│
+│  
+└─📁 src                  Código fuente
+│ │
+│ └─📁 app               componentes, módulos, servicios, utils
+│ │
+│ └─📁 assets            archivos
+│ │       
+│ └─📁 environments      Configuracion de ambientes
+│
+└─📄 README.md            Documentacion del software
+```
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 👓 Pruebas
+### Ejecutar
+1. Para Ejecutar el proyecto se debe clonar, luego de clonar se deben de descargar las dependencias, y luego iniciar o generar ejecutables
+>comandos:
+```
+git clone git@github.com:wrumbos/booking-app.git
+cd booking-web
+npm install
+ionic cordova build android (para generar apk)
+ionic cordova run android (Para correr en un navegador)
+```
+### Home pagina simple que contiene un titulo
+![](resources/images/1.jpeg)
+### inicio de session pagina contiene un formulario para inciar session contempla validaciones
+![](resources/images/2.jpeg)
+![](resources/images/3.jpeg)
+### booking al lograr un inicio de session exitoso a los usuarios puede consultar los bookings en donde se tendra una lista con las posibilidades de los campos id y precio filtar y ordenar
+![](resources/images/4.jpeg)
